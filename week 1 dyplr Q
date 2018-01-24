@@ -1,0 +1,10 @@
+iris %>% group_by(Species) %>% summarize (meanSL = mean(Sepal.Length))
+iris %>% group_by(Species) %>% summarize (varSL = var(Sepal.Length))
+iris %>% group_by(Species) %>% summarize (
+iris %>% group_by(Species) %>% summarize (meanSL = mean(Sepal.Length),       varSL = var(Sepal.Length),       sdSL = sd(Sepal.Length))
+mtcars %>% group_by(vs,am) %>% summarize(medianMpg = median(mpg))
+mtcars %>% select (1:4) %>% head(4)
+mtcars %>% select (1:drat) %>% head(4)
+mtcars %>% select (cyl:vs) %>% head(4)
+mtcars %>% select (2:4, eveything) %>% head(4)
+mtcars %>% mutate(sqrtMPG = sqrt(mpg),logMPG = log(mpg)) %>% select(mpg,sqrtMGP,logMPG,everything() ) %>% head(5) 
